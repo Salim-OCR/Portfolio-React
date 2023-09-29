@@ -1,0 +1,49 @@
+#pageHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .monProfil {
+    width: 100%;
+
+    .imgProfil {
+      border: 1px solid $white;
+      width: 500px;
+      margin: 0 auto;
+      height: 50vh;
+      background: url("../../../public/media/profil.jpg") center/cover;
+      transform: translateY(-450px);
+      opacity: 0;
+      animation: anim 1s ease-out forwards;
+    }
+
+    h1, h2, h3{
+      text-transform: uppercase;
+      margin: 10px auto 10px;
+      text-shadow: 1px 2px 3px $color1;
+      transform: translateX(-450px);
+      opacity: 0;
+      animation: anim 1s ease-out forwards;
+    }
+
+    h1{
+      font-size: 5rem;
+    }
+    h2{
+      font-size: 3rem;
+    }
+
+    h3{
+      font-size: 2rem;
+    }
+  }
+
+  @keyframes anim {
+    100%{
+      opacity: 1;
+      transform:translate(0,0) ;
+    }
+  }
+
+}
