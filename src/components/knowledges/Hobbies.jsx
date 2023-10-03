@@ -5,7 +5,7 @@ const Hobbies = () => {
     <div className="hobbies">
       <h3>Intérêts</h3>
       <ul>
-        <li>Boxe Anglaise</li>
+        <li>Boxe</li>
         <li>Histoire</li>
         <li>Livres</li>
         <li>Trading</li>

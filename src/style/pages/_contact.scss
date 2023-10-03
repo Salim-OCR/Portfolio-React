@@ -1,7 +1,8 @@
 .contact {
   position: absolute;
-  width: 100vw;
+  width: 90%;
   height: 100vh;
+  margin: 0 auto;
 
   &:after {
     content: "";
@@ -59,12 +60,16 @@
       margin: 2rem 0 0 30%;
     }
 
-    @media screen and (max-width: 440px) {
-      margin-left: 2rem;
+    @media screen and (max-width: 500px) {
+      margin-left: 1rem;
     }
 
     h2 {
       margin-bottom: 50px;
+
+      @media screen and (max-width: 500px) {
+        margin: 80px 0 20px;
+      }
 
       &:after {
         content: "";
@@ -99,7 +104,6 @@
       input {
         padding: 10px 6px;
         margin-bottom: 30px;
-
       }
     }
 
@@ -154,6 +158,11 @@
   width: 30%;
   max-width: 500px;
 
+  @media screen and (min-width: 1200px) {
+    width: 35%;
+    height: 83%;
+  }
+
   @media screen and (max-width: 900px) {
     height: 200px;
     width: 100%;
@@ -167,22 +176,15 @@
       "e e f";
   }
 
-  @media screen and (max-width: 540px) {
-    grid-template-rows: repeat(3, 60px);
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-areas:
-      "b b b c c c"
-      "d d d d d d"
-      "e e e e f f";
-  }
+  @media screen and (max-width: 700px) {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows:  70px 70px 100px;
+        grid-template-areas:
+            "b b "
+            "c c "
+            "f f ";
 
-  @media screen and (max-height: 500px) {
-    display: none;
-  }
-
-  @media screen and (min-width: 1200px) {
-    width: 35%;
-    height: 83%;
   }
 
   h4 {
@@ -199,13 +201,6 @@
   p {
     @media screen and (min-width: 1200px) {
       font-size: 1.5rem;
-    }
-  }
-
-  .email,
-  .phone {
-    @media screen and (max-height: 640px) {
-      display: none;
     }
   }
 
@@ -236,7 +231,6 @@
 
     @media screen and (max-width: 540px) {
       text-align: center;
-      font-size: 0.8rem;
       grid-area: b;
     }
 
@@ -257,29 +251,6 @@
   .email {
     @media screen and (max-width: 540px) {
       grid-area: c;
-      font-size: 0.8rem;
-      text-align: center;
-    }
-  }
-
-  .social-network {
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-
-    @media screen and (max-width: 740px) {
-      width: 50%;
-      grid-area: d;
-    }
-
-    @media screen and (min-width: 1200px) {
-      font-size: 2rem;
-    }
-
-    .content {
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
     }
   }
 
@@ -294,7 +265,7 @@
     }
 
     p {
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
   }
 }

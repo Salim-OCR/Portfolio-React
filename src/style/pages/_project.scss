@@ -35,8 +35,15 @@
         align-items: center;
         padding: 0 .5rem;
         margin-top: 170px;
+      }
 
+      @media screen and (max-width: 500px) {
+        flex-direction: column;
 
+        ul {
+
+          text-align: center;
+        }
       }
 
       h1 {
@@ -113,14 +120,9 @@
           // width: 500px;
         }
 
-        @media screen and (max-width: 540px) {
-          height: 200px;
-          width: 370px;
-        }
-
-        @media screen and (max-width: 400px) {
-          height: 150px;
-          width: 280px
+        @media screen and (max-width: 500px) {
+          height: 300px;
+          width: 100%;
         }
 
         &:hover span,

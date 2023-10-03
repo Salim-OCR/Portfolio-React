@@ -178,12 +178,26 @@
         h2 {
             font-size: 2.5rem;
             width: 80%;
+            padding: 35px 0px 0px;
 
             @keyframes animH2 {
                 100% {
                     opacity: 1;
                     left: 60%;
                     transform: translateX(-50%);
+                }
+            }
+
+            @media screen and (max-width: 700px) {
+                font-size: 1.45rem;
+                width: 81%;
+
+                @keyframes animH2 {
+                    100% {
+                        opacity: 1;
+                        left: 57%;
+                        transform: translateX(-50%);
+                    }
                 }
             }
         }
@@ -193,10 +207,31 @@
             width: 80%;
             margin: 30px auto 0;
 
+            @media screen and (max-width: 700px) {
+                margin: 0;
+                width: 100%;
+            }
+
             .displayLanguages {
                 margin-top: 90px;
                 margin-left: 50px;
                 width: 70%;
+
+                @media screen and (max-width: 700px) {
+                    margin-top: 80px;
+                    margin-left: 27px;
+                    width: 83%;
+
+                    ul {
+                        margin: 0;
+                    }
+                }
+            }
+
+            .displayFramework {
+                @media screen and (max-width: 700px) {
+                    margin-top: 30px;
+                }
             }
         }
 
@@ -204,13 +239,21 @@
             border-top: 1px solid $color5;
             border-bottom: 1px solid $color5;
             padding: 30px 0;
+
+            @media screen and (max-width: 700px) {
+                padding: 10px 0;
+
+                p {
+                    text-align: center;
+                }
+            }
         }
 
         .otherSkills {
-            margin-top: 30px;
+            margin-top: 10px;
 
-            h3{
-                width: 500px;
+            h3 {
+                width: 90%;
                 margin: 0 auto;
             }
         }
@@ -219,6 +262,7 @@
             ul {
                 display: flex;
                 justify-content: space-around;
+                flex-wrap: wrap;
             }
         }
     }
