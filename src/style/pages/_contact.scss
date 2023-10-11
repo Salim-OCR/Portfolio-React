@@ -24,10 +24,6 @@
       right: -140px;
     }
 
-    @media screen and (max-width: 430px) {
-      display: none;
-    }
-
     @keyframes contactAnim {
       50% {
         transform: scale(1.4);

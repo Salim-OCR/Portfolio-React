@@ -5,9 +5,9 @@ export const projectsData = [
     date: "Septembre 2023",
     languages: ["React", "Sass"],
     infos:
-      "J'ai développé mon tout premier site e-commerce en React, en utilisant des composants pour mieux comprendre cette bibliothèque. Le site comporte quatre pages : une page d'accueil, une page produit avec identifiant unique, une page panier avec récapitulatif et formulaire de paiement fictif, et enfin une page de confirmation avec un numéro unique. J'ai également utilisé le localStorage pour stocker des données.",
+      "J'ai développé mon tout premier site e-commerce en React, en utilisant des composants pour mieux comprendre cette bibliothèque. Le site comporte quatre pages : une page d'accueil, une page produit avec identifiant unique, une page panier avec récapitulatif et formulaire, et enfin une page de confirmation avec un numéro unique. J'ai également utilisé le localStorage pour stocker des données.",
     img: "./media/projet1.png",
-    link: "https://demo-ecommerce6test01.netlify.app/",
+    link: "https://ecommerce-react88.netlify.app",
   },
   {
     id: 2,

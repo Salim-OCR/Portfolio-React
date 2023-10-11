@@ -121,7 +121,7 @@
         }
 
         @media screen and (max-width: 500px) {
-          height: 300px;
+          height: 510px;
           width: 100%;
         }
 
@@ -163,16 +163,20 @@
 
           @media screen and (max-width: 1190px) {
             font-size: 1.2rem;
-            line-height: 25px;
+            line-height: 20px;
           }
 
           @media screen and (max-width: 940px) {
             font-size: 1.2rem;
-            line-height: 12px;
           }
 
           @media screen and (max-width: 540px) {
-            font-size: .8rem;
+            font-size: 1.3rem;
+            line-height: 20px;
+          }
+          @media screen and (max-width: 375px) {
+            font-size: 1rem;
+            line-height: 20px;
           }
 
           h3 {
