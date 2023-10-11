@@ -6,7 +6,7 @@ function Home() {
       <section id="pageHome">
         <div className="monProfil">
           <div className="imgProfil">
-            <img src="./media/profil.jpg" alt="photo de profil" />
+            <img src="./media/profil.png" alt="photo de profil" />
           </div>
           <h1>salim ibrahimi</h1>
           <h2>développeur web </h2>
